@@ -1,44 +1,27 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c;
-    printf("Enter the first number/n");
-    scanf("%d",&a);
-    printf("Enter the second number/n");
-    scanf("%d",&b);
-    c=a+b;
-    printf("The sum is %d",c);
-
-
-    printf("Enter the first number/n");
-    scanf("%d",&a);
-    printf("Enter the second number/n");
-    scanf("%d",&b);
-    c=a-b;
-    printf("The difference is %d",c);
-
-
-    printf("Enter the first number/n");
-    scanf("%d",&a);
-    printf("Enter the second number/n");
-    scanf("%d",&b);
-    c=a*b;
-    printf("The product is %d",c);
-
-
-    printf("Enter the first number/n");
-    scanf("%d",&a);
-    printf("Enter the second number/n");
-    scanf("%d",&b);
-    c=a/b;
-    printf("The division is %d",c);
-
-
-    printf("Enter the first number/n");
-    scanf("%d",&a);
-    printf("Enter the second number/n");
-    scanf("%d",&b);
-    c=a%b;
-    printf("The percentage is %d",c);
-
+    int per;
+    printf("Enter your percentage");
+    scanf("%d",&per);
+    if(per>80)
+    {
+        printf("A grade");
+    }
+    else if(per<80 && per>=70)
+    {
+        printf("B grade");
+    }
+    else if(per<70 && per>=60)
+    {
+        printf("C grade");
+    }
+    else if(per<60 && per>=45)
+    {
+        printf("D grade");
+    }
+    else if(per<45)
+    {
+        printf("FAIL");
+    }
 }
